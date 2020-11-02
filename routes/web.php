@@ -18,6 +18,12 @@ use App\Http\Controllers\InputController;
 
 Route::get('/', [Controller::class, 'v_dashboard']);
 Route::get('beras', [Controller::class, 'v_beras']);
+Route::get('gula', [Controller::class, 'v_gula']);
+Route::get('minyak', [Controller::class, 'v_minyak']);
+Route::get('telur', [Controller::class, 'v_telur']);
+Route::get('susu', [Controller::class, 'v_susu']);
+Route::get('daging', [Controller::class, 'v_daging']);
+Route::get('garam', [Controller::class, 'v_garam']);
 Route::get('shop-detail1', [Controller::class, 'v_detail1']);
 Route::get('shop-detail2', [Controller::class, 'v_detail2']);
 Route::get('cart', [Controller::class, 'v_cart']);

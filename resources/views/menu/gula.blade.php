@@ -2,46 +2,33 @@
 
 @section('content-menu')
 <div class="col-md-9">
-              <p class="text-muted lead">Beras</p>
+              <p class="text-muted lead">GUla</p>
               <div class="row products products-big">
                 <div class="col-lg-4 col-md-6">
                   <div class="product">
-                    <div class="image"><a href="shop-detail1"><img src="img/beras5kg.jpg" alt="" class="img-fluid image1"></a></div>
+                    <div class="image"><a href="shop-detail1"><img src="img/gula1kg.jpg" alt="" class="img-fluid image1"></a></div>
                     <div class="text">
-                      <h3 class="h5"><a href="shop-detail1">Beras x 5kg</a></h3>
+                      <h3 class="h5"><a href="shop-detail1">Gula pasir 1kg</a></h3>
                       <p class="price">Rp.25.000</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <div class="product">
-                    <div class="image"><a href="shop-detail1"><img src="img/garamda.jpg" alt="" class="img-fluid image1"></a></div>
+                    <div class="image"><a href="shop-detail2"><img src="img/gulaku.jpg" alt="" class="img-fluid image1"></a></div>
                     <div class="text">
-                      <h3 class="h5"><a href="shop-detail1">garam dapur</a></h3>
-                      <p class="price">Rp.25.000</p>
+                      <h3 class="h5"><a href="shop-detail2">Gulaku</a></h3>
+                      <p class="price">
+                        <del>Rp. 50.000</del> Rp.45.000
+                      </p>
+                    </div>
+                    <div class="ribbon-holder">
+                      <div class="ribbon sale">SALE</div>
+                      <div class="ribbon new">NEW</div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="product">
-                    <div class="image"><a href="shop-detail1"><img src="img/dagingayam.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                      <h3 class="h5"><a href="shop-detail1">daging ayam</a></h3>
-                      <p class="price">Rp.25.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row products products-big">
-                <div class="col-lg-4 col-md-6">
-                  <div class="product">
-                    <div class="image"><a href="shop-detail1"><img src="img/telurayam.jpg" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                      <h3 class="h5"><a href="shop-detail1">Telur Ayam</a></h3>
-                      <p class="price">Rp.25.000</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
               
               <div class="pages">
