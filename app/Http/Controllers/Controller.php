@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
-
+use App\Models\shopcart;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -19,6 +19,24 @@ class Controller extends BaseController
     public function v_beras(){
         return view('menu.beras');
     }
+    public function v_gula(){
+        return view('menu.gula');
+    }
+    public function v_minyak(){
+        return view('menu.minyak');
+    }
+    public function v_telur(){
+        return view('menu.telur');
+    }
+    public function v_susu(){
+        return view('menu.susu');
+    }
+    public function v_daging(){
+        return view('menu.daging');
+    }
+    public function v_garam(){
+        return view('menu.garam');
+    }
     public function v_detail1(){
         return view('detail.beras1');
     }
@@ -27,12 +45,17 @@ class Controller extends BaseController
     }
     public function v_cart(){
         return view('cart.shopping-cart');
+        $setJumlah = 25000;
+        $setTotal = 35000;
+        return view('cart.shopping-cart',['harga_qty'=> $setJumlah,'harga_ttl'=> $setTotal]);
     }
     public function v_cart1(Request $xx){
         $a =  $xx ->input('jumlah');
-        $b = 25000;
-        $c = $a*$b;
-        echo $c;
+        $cartt = new shopcart();
+        $setJumlah = $cartt->hitungqty($a);
+        $setTotal = $cartt->hitungttl($a);
+
+        return view('cart.shopping-cart',['qty'=> $a,'harga_qty'=> $setJumlah,'harga_ttl'=> $setTotal]);
     }
 
     public function v_checkout1(){
